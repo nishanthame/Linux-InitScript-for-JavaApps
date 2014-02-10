@@ -29,8 +29,8 @@ APP_MAIN_CLASS=@app.main.class@
 
 JAVACMD="${JAVA_HOME}/bin/java"
 APP_LIB="${APP_HOME}/lib"
-LOCALCLASSPATH="${APP_LIB}:${APP_HOME}/ldap-soap-adaptor.jar:${APP_CONF_DIR}"
-APP_RUN_CMD="${JAVACMD} -cp \"${LOCALCLASSPATH}\" com.intel.kpn.adaptor.ldap.LDAPFacade"
+LOCALCLASSPATH="${APP_LIB}:${APP_HOME}/app.jar:${APP_CONF_DIR}"
+APP_RUN_CMD="${JAVACMD} -cp \"${LOCALCLASSPATH}\" com.app.MainClass"
 
 start() {
 
